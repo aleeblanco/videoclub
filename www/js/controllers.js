@@ -4,7 +4,7 @@ angular.module('starter.controllers', [])
     
     $scope.showAlert = function() {
      var alertPopup = $ionicPopup.alert({
-       title: 'Agenda',
+       title: 'Peliculas',
        template: 'Datos guardados'
      });
     }
