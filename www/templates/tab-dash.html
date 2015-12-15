@@ -1,4 +1,4 @@
-<ion-view view-title="Agregar pelicula">
+<ion-view view-title="Peliculas">
   <ion-content class="padding">
     
     <form name="agregarForm" novalidate>
@@ -10,28 +10,28 @@
    
    <label class="item item-input">
       <span class="input-label">Año</span>
-      <input type="tel" name="año" ng-model="persona.año" required>
+      <input type="text" name="año" ng-model="persona.año" required>
    </label>
    
    <label class="item item-input">
       <span class="input-label">Genero</span>
-      <input type="text" name="genero" ng-model="persona.genero" required>
+      <input type="tel" name="genero" ng-model="persona.genero" required>
    </label>
-   
-   <label class="item item-input">
+    <label class="item item-input">
       <span class="input-label">Sinopsis</span>
-      <input type="text" name="sinopsis" ng-model="persona.sinopsis" required>
+      <input type="text" name="sinopsis"  ng-model="persona.sinopsis" required>
+   </label>
+
+    <label class="item item-input">
+      <span class="input-label">Actores</span>
+      <input type="text" name="actores"  ng-model="persona.actores" required>
    </label>
    
-   <label class="item item-input">
-      <span class="input-label">Actores</span>
-      <input type="text" name="actores" ng-model="persona.actores" required>
-   </label>
    </div>
    
    <div class="padding">
         <p ng-show="agregarForm.nombre.$error.required">Escriba el nombre</p>
-        <p ng-show="agregarForm.año.$error.required">Escriba el año</p>
+        <p ng-show="agregarForm.año.$error.required">Escriba la año</p>
         <p ng-show="agregarForm.genero.$error.required">Escriba el genero</p>
         <p ng-show="agregarForm.sinopsis.$error.required">Escriba el sinopsis</p>
         <p ng-show="agregarForm.actores.$error.required">Escriba el actores</p>
